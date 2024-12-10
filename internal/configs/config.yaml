@@ -1,0 +1,6 @@
+service:
+  port: ":9876"
+  secretJWT: "indratest"
+
+database:
+  dataSourceName: "root:IndraSuperSecret@tcp(localhost:3306)/web_forum?parseTime=true"

@@ -1,0 +1,11 @@
+services:
+  db:
+    image: mysql:latest
+    container_name: local-mysql-indrawansyah
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=IndraSuperSecret
+      - MYSQL_DATABASE=web_forum
+    volumes:
+      - "C:/Indrawansyah/Belajar Coding/go/web-forum-go:/var/lib/mysql"
